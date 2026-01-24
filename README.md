@@ -56,7 +56,7 @@ Shoes Website: A responsive e-commerce website for shoes featuring product listi
 - Open to collaboration, freelance, internships, and full-time opportunities.
 
 ## 📫 Let’s Connect
-- Email: your.email@example.com
+- Email: anggelmishraofficial@example.com
 - LinkedIn: https://www.linkedin.com/in/angel-mishra-992474345/
 - GitHub: [github.com/123angmish](https://github.com/123angmish)
 ## 🤝 Available For
