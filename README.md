@@ -1,4 +1,4 @@
-# Hi there, I'm 123angmish 👋
+# Hi there, I'm 123angmish 👋(angel mishra)
 > Java | DSA | Frontend Developer | Problem Solver
 
 I'm a passionate developer who loves building clean, performant applications and solving challenging algorithmic problems. I enjoy working across the stack — from designing user-friendly frontends to crafting robust backend systems in Java — and I'm always learning new tools and techniques.
