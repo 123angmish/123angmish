@@ -1,5 +1,3 @@
-## Hi there 👋
-
 # Hi there, I'm 123angmish 👋
 > Java | DSA | Frontend Developer | Problem Solver
 
@@ -47,9 +45,11 @@ I'm a passionate developer who loves building clean, performant applications and
 - Mentor junior devs and help peers grow in algorithms and frontend fundamentals.
 ---
 ## 📂 Notable Projects
-- Project A — Full-stack task manager (Java Spring Boot + React). Features: auth, CRUD, real-time updates.
-- Project B — Algorithm visualizer built with React to demonstrate DSA concepts interactively.
-- Project C — RESTful microservice for order processing with robust error handling and tests.
+BreakChain AI: An AI-powered mental health web application providing emotional support through a chatbot, therapist connectivity, and healing tools.
+
+Cooknetic AI: An AI-based recipe recommendation platform that suggests personalized dishes based on ingredients, preferences, and user mood.
+
+Shoes Website: A responsive e-commerce website for shoes featuring product listings, categories, and a modern user-friendly UI.
 
 ## ✨ Profile & Stats
 - Always learning: new Java features, frontend patterns, and advanced DSA techniques.
@@ -57,10 +57,8 @@ I'm a passionate developer who loves building clean, performant applications and
 
 ## 📫 Let’s Connect
 - Email: your.email@example.com
-- LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- LinkedIn: https://www.linkedin.com/in/angel-mishra-992474345/
 - GitHub: [github.com/123angmish](https://github.com/123angmish)
-- LeetCode: [leetcode.com/your-username](https://leetcode.com/)
-- Portfolio: [your-site.com](https://your-site.com) (optional)
 ## 🤝 Available For
 - Open-source contributions
 - Freelance / contract work
