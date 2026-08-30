@@ -60,9 +60,9 @@ I am a software engineer focused on building robust, secure backend systems in *
 ---
 
 ### 4. [FloodGuard AI](https://github.com/123angmish/floodguard-ai) — Real-Time Flood Hazard & Risk Monitoring *(Final Year Computer Vision Project)*
-*AI and Computer Vision prototype developed as a Final Year Project in B.Tech ECE (Banasthali Vidyapith) for flood detection, flow velocity estimation, and community risk alerting.*
-- **Computer Vision Pipeline**: Combines deep convolutional neural networks (`MobileNetV2` transfer learning) for frame classification with Lucas-Kanade optical flow for relative surface motion tracking and velocity estimation.
-- **Verified Architecture**: Verified saved MobileNetV2 frozen backbone (2.26M parameters) + custom dense classification head (164K parameters) with reproducible retraining module in `training/`.
+*AI and Computer Vision prototype developed as a Final Year Project in B.Tech ECE (Banasthali Vidyapith) for flood-scene analysis, estimated surface motion/flow analysis, and community risk alerting.*
+- **Computer Vision Pipeline**: Combines a MobileNetV2-based CNN for frame-level flood scene classification with Lucas-Kanade optical flow for relative surface motion tracking and estimated flow analysis.
+- **Verified Architecture**: Saved model contains a MobileNetV2-based frozen backbone (~2.26M non-trainable parameters) with a custom dense binary classification head (~164K trainable parameters), plus a separate reproducible retraining module under `training/`.
 - **Telemetry & WebSockets**: Low-latency video stream pipeline with MJPEG feed and WebSocket channels for location-scoped emergency telemetry.
 - **Stack**: Python 3.10+, FastAPI, OpenCV, MobileNetV2-based CNN (TensorFlow), SQLite, WebSockets.
 
