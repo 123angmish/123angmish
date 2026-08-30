@@ -1,90 +1,79 @@
-# 🎯 Machine Learning & Computer Vision Portfolio Audit Report
+# 🎯 Machine Learning & Computer Vision Portfolio Audit Report (Phase 2 Revision)
 
 **Candidate**: Angel Mishra  
 **Target Placement Profile**: Java Backend Developer / Full-Stack Developer  
-**Secondary Differentiator**: Machine Learning & Computer Vision (NIT Kurukshetra Internship & Final Year Project)  
+**Secondary Differentiator**: Machine Learning & Computer Vision Research Exposure (NIT Kurukshetra Internship & Final Year Project)  
 **Academic Background**: B.Tech in Electronics & Communication Engineering (ECE), Banasthali Vidyapith  
 **GitHub**: [https://github.com/123angmish](https://github.com/123angmish)  
 
 ---
 
-## 1. Executive Summary & Philosophy
+## 1. Executive Summary & Verification Standards
 
-This second-phase upgrade focused on making your Machine Learning and Computer Vision repositories **academically credible, technically grounded, and 100% interview-defensible** without distorting your primary identity as a **Java Backend & Full-Stack Engineer**.
+This revised audit resolves all remaining methodological and provenance discrepancies, enforcing strict scientific integrity, technical reproducibility, and transparent reporting.
 
-### Key Principles Enforced:
-1. **Source Code is Ground Truth**: Removed all unsupported claims (e.g. "scientifically calibrated flow velocities", "real social media scraped database").
-2. **Accurate Dataset Classification**: Classified datasets transparently as synthetic/benchmark matrices designed for pipeline validation.
-3. **Reproducible Experiments**: Implemented actual baseline comparison scripts, permutation feature importance computations, and saved machine-readable results.
-4. **Separation of Concerns**: Clearly distinguished deep learning classification from classical signal processing / optical flow.
+### Core Standards Enforced:
+1. **Source Code is Ground Truth**: Removed all unsupported claims, fabricated metric numbers, and mathematically generated training curves.
+2. **Proper Model Selection**: Selected Linear Regression ($R^2 = 0.8824$, $\text{RMSE} = 4.5194$) as the best-performing model on the synthetic benchmark dataset because the underlying data generation process is largely linear with additive noise.
+3. **Transparent Provenance**: Verified the saved MobileNetV2 architecture in `flood_model.h5` while explicitly documenting that original training dataset provenance was not preserved. Built reproducible dataset loading and retraining modules requiring genuine labeled images in `data/`.
+4. **Dynamic CI Badges**: Replaced static status badges with live GitHub Actions workflow URLs.
 
 ---
 
 ## 2. Detailed Audit & Changes by ML/CV Repository
 
 ### A. AI Virality Predictor (`ai-virality-predictor`)
-*NIT Kurukshetra Research Internship Prototype $\rightarrow$ Full-Stack Platform*
-
-- **Methodological Fixes**:
-  - Renamed misleading class `RealDatasetLoader` $\rightarrow$ `DatasetLoader` and method `generate_real_world_engagement_fallback` $\rightarrow$ `generate_synthetic_benchmark_dataset`.
-  - Removed unrelated `cardiffnlp/tweet_eval` sentiment dataset from training logic.
-  - Clarified Kaggle YouTube metadata ingestion vs synthetic multimodal feature distributions.
-- **Empirical Baseline Model Comparison (`backend/compare_models.py`)**:
-  - Evaluated on $N=10,000$ benchmark dataset (80/20 train-test split):
-    - **Linear Regression**: $R^2 = 0.8824$, $\text{RMSE} = 4.5194$, $\text{MAE} = 3.7105$
-    - **Ridge Regression**: $R^2 = 0.8824$, $\text{RMSE} = 4.5195$, $\text{MAE} = 3.7105$
-    - **HistGradientBoostingRegressor (Selected)**: $R^2 = 0.8669$, $\text{RMSE} = 4.8081$, $\text{MAE} = 3.9141$
-    - **Gradient Boosting Regressor**: $R^2 = 0.8651$, $\text{RMSE} = 4.8396$, $\text{MAE} = 3.9203$
-    - **Random Forest Regressor**: $R^2 = 0.8007$, $\text{RMSE} = 5.8836$, $\text{MAE} = 4.6765$
-  - Model selection justification: Gradient boosted decision trees capture non-linear feature interactions and non-monotonic threshold effects while maintaining sub-5ms inference latency.
-- **Permutation Feature Importance Ranking**:
-  1. `hook_motion_intensity` ($\Delta R^2 = 0.4120$)
-  2. `scene_cut_rate` ($\Delta R^2 = 0.2854$)
-  3. `audio_rms_energy` ($\Delta R^2 = 0.2410$)
-  4. `text_overlay_ratio` ($\Delta R^2 = 0.1190$)
-  5. `color_vibrancy` ($\Delta R^2 = 0.0620$)
-  6. `transcript_wpm` ($\Delta R^2 = 0.0480$)
-  7. `resolution_aspect` ($\Delta R^2 = 0.0310$)
-- **Generated Visual Artifacts**:
-  - `feature_importance.png`, `model_comparison.png`, `predicted_vs_actual.png`, `residual_distribution.png`
-- **Documentation Added**:
-  - `docs/DATASET.md`, `docs/MODEL_CARD.md`, `docs/EXPERIMENTS.md`, `docs/INTERNSHIP_EVOLUTION.md`, `ML_INTERVIEW_NOTES.md`, `LICENSE`.
-- **Test Suite & CI**:
-  - Pytest suite (`9/9 passed`): Dataset deterministic generation, feature extraction fallback, API routes, model inference.
-  - Added `.github/workflows/ci.yml`.
+- **Dataset Classification**: Standardized Synthetic Benchmark Dataset ($N=10,000$, Seed `42`) parameterized by controlled synthetic distributions to model plausible feature ranges.
+- **Model Selection & Rationale**:
+  - **Linear Regression (Selected Baseline)**: $R^2 = 0.8824$, $\text{RMSE} = 4.5194$, $\text{MAE} = 3.7105$
+  - **Ridge Regression ($\alpha=1.0$)**: $R^2 = 0.8824$, $\text{RMSE} = 4.5195$, $\text{MAE} = 3.7105$
+  - **HistGradientBoosting Regressor (Comparison)**: $R^2 = 0.8669$, $\text{RMSE} = 4.8081$, $\text{MAE} = 3.9141$
+  - **Gradient Boosting Regressor (Comparison)**: $R^2 = 0.8651$, $\text{RMSE} = 4.8396$, $\text{MAE} = 3.9203$
+  - **Random Forest Regressor (Comparison)**: $R^2 = 0.8007$, $\text{RMSE} = 5.8836$, $\text{MAE} = 4.6765$
+- **Artifacts Generated from Selected Model**:
+  - `backend/artifacts/predicted_vs_actual.png`
+  - `backend/artifacts/residual_distribution.png`
+  - `backend/artifacts/feature_importance.png` (Permutation Importance on Linear Regression)
+  - `backend/artifacts/coefficient_importance.png` & `coefficient_analysis.json`
+  - `backend/artifacts/model_comparison.png` & `model_comparison.json`
+- **Environment & Serialization Provenance**:
+  - Saved `python_version` (3.10), `scikit_learn_version` (1.4+), and `serialization_method` in `model_metadata.json`.
+- **Tests & CI**:
+  - Pytest: **9 / 9 passed**.
+  - Cleaned `requirements.txt` removing unused libraries (`xgboost`, `datasets`, `kaggle`, `easyocr`).
+  - Added real GitHub Actions CI badge.
 
 ---
 
 ### B. FloodGuard AI (`floodguard-ai`)
-*Final Year Computer Vision Project — B.Tech ECE, Banasthali Vidyapith*
-
-- **Academic Positioning**:
-  - Corrected degree positioning to B.Tech Electronics and Communication Engineering (ECE), Banasthali Vidyapith.
-  - Softened velocity claims: Presented as an estimated surface motion indicator calculated via Lucas-Kanade optical flow ($S = 0.05$ m/px) rather than physical streamflow gauge data.
-- **Model Architecture Verification (`flood_model.h5`)**:
-  - MobileNetV2 pre-trained on ImageNet (2,257,984 frozen parameters).
-  - Head: `GlobalAveragePooling2D` $\rightarrow$ `Dense(128, relu)` $\rightarrow$ `Dropout(0.2)` $\rightarrow$ `Dense(1, sigmoid)` (164,097 trainable parameters).
-- **Training & Evaluation Module (`training/`)**:
-  - Added `training/config.py`, `dataset.py`, `augmentations.py`, `train.py`, `evaluate.py`.
-  - Generated evaluation artifacts: `artifacts/metrics.json`, `artifacts/confusion_matrix.png`, `artifacts/training_curves.png`.
-- **UI & Telemetry Refinement**:
-  - Updated HUD overlay to `Confidence: X% | Est. Flow: X m/s (Proto)`.
-- **Documentation Added**:
-  - `docs/FINAL_YEAR_PROJECT.md`, `docs/DATASET.md`, `docs/MODEL_CARD.md`, `ML_INTERVIEW_NOTES.md`, `LICENSE`.
-- **Test Suite & CI**:
-  - Pytest suite (`8/8 passed`): Frame processing, optical flow corner detection, decision fusion boundaries, FastAPI endpoints, video upload validation.
-  - Added `.github/workflows/ci.yml`.
+- **Removal of Synthetic Image Benchmark & Fabricated Curves**:
+  - Removed random synthetic image generation from `training/dataset.py`.
+  - Deleted fabricated metrics ($0.54$ accuracy, $0$ precision/recall, $0.0052$ ROC-AUC) and fabricated `training_curves.png`.
+- **Verified Saved Model Architecture (`training/inspect_model.py`)**:
+  - Saved in `artifacts/model_architecture.json`:
+    - MobileNetV2 ImageNet frozen backbone (2,257,984 non-trainable parameters).
+    - Head: `GlobalAveragePooling2D` $\rightarrow$ `Dense(128, relu)` $\rightarrow$ `Dropout(0.2)` $\rightarrow$ `Dense(1, sigmoid)` (164,097 trainable parameters).
+    - Total Parameters: 2,422,081 (9.24 MB).
+- **Dataset Loader & Retraining Pipeline**:
+  - `training/dataset.py`: Validates and loads genuine labeled images from `data/train`, `data/val`, and `data/test`.
+  - `training/train.py`: Trains MobileNetV2 only when real labeled data is supplied, saving new models to `artifacts/flood_mobilenetv2_retrained.keras` (never overwriting `flood_model.h5`) and plotting actual curves only from `history.history`.
+  - `training/evaluate.py`: Evaluates held-out performance only when real labeled test data exists.
+  - `tests/fixtures/synthetic_test_tensors.py`: Mock tensors scoped strictly for unit test execution without making performance claims.
+- **Tests & CI**:
+  - Pytest: **9 / 9 passed**.
+  - Switched to `opencv-python-headless` and streamlined `.github/workflows/ci.yml`.
+  - Added real GitHub Actions CI badge.
 
 ---
 
-## 3. Interview Talking Points & Boundaries
+## 3. Interview Guidelines & Defensibility
 
 ### What to SAY in Interviews
-- **Java Backend Focus**: "My primary focus is Java backend and full-stack development with Spring Boot, Spring Security, React, and PostgreSQL. In addition, I have hands-on research and applied experience in Machine Learning and Computer Vision."
-- **AI Virality Predictor**: "The project started as a Flask research prototype during my internship at NIT Kurukshetra, focusing on OpenCV optical flow and Librosa audio energy extraction. I later scaled it into a full-stack FastAPI and Next.js platform with automated platform blueprints and baseline model benchmarks."
-- **FloodGuard AI**: "For my final year B.Tech ECE project, I built an end-to-end computer vision prototype combining MobileNetV2 transfer learning for flood scene classification with Lucas-Kanade optical flow for relative surface motion tracking, broadcasting real-time alerts via WebSockets."
+- **Primary Focus**: "My primary profile is Java backend and full-stack engineering with Spring Boot, Spring Security, React, and PostgreSQL. In addition, I have hands-on research and applied experience in Machine Learning and Computer Vision."
+- **AI Virality Predictor**: "The project started as a Flask research prototype during my internship at NIT Kurukshetra focusing on OpenCV optical flow and Librosa audio analysis. Later, I expanded it into a full-stack platform using FastAPI and Next.js 14. On our synthetic benchmark comparison, Linear Regression achieved the best performance ($R^2 = 0.8824$) because the engineered target is largely linear, demonstrating why simpler models should be chosen when supported by experimental evidence."
+- **FloodGuard AI**: "For my final year B.Tech ECE project, I developed an end-to-end prototype combining MobileNetV2 transfer learning for flood scene classification with Lucas-Kanade optical flow for relative surface motion tracking, broadcasting real-time alerts via WebSockets."
 
 ### What NOT to Say
-- ❌ Do NOT claim you trained models on millions of scraped private user accounts.
+- ❌ Do NOT claim you trained models on millions of live scraped YouTube accounts.
 - ❌ Do NOT claim optical flow measures exact municipal-grade water velocity without camera calibration.
-- ❌ Do NOT describe yourself as an ML researcher or AI scientist when interviewing for Java Backend / Full-Stack roles. Frame ML as an impactful technical differentiator.
+- ❌ Do NOT claim high model accuracy on FloodGuard AI unless evaluated on a genuine labeled benchmark dataset.

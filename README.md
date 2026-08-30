@@ -51,9 +51,9 @@ I am a software engineer focused on building robust, secure backend systems in *
 ---
 
 ### 3. [AI Virality Predictor](https://github.com/123angmish/ai-virality-predictor) — Video Intelligence & Platform Optimizer *(NIT Kurukshetra Research Internship Project)*
-*Multimodal video analytics engine predicting engagement potential across YouTube Shorts, TikTok, and Instagram Reels.*
+*Multimodal video analytics engine and regression benchmark evaluating video pacing across YouTube Shorts, TikTok, and Instagram Reels.*
 - **Feature Extraction**: Extracted optical motion flow (0–3s hook intensity) via OpenCV and acoustic RMS energy peaks via Librosa.
-- **Machine Learning**: Gradient boosted regression model (`HistGradientBoostingRegressor`) trained on a multimodal benchmark distribution to estimate engagement likelihood and generate pacing recommendations.
+- **Machine Learning Benchmark**: Baseline regression comparison on a controlled synthetic multimodal benchmark ($N=10,000$) where Linear Regression proved optimal ($R^2 = 0.8824$, $\text{RMSE} = 4.5194$) due to the underlying linear target structure.
 - **Project Evolution**: Originated as a Flask research prototype during my NIT Kurukshetra internship, later independently expanded into a FastAPI + Next.js 14 platform with automated platform blueprints.
 - **Stack**: Python, FastAPI, Next.js 14, OpenCV, Librosa, Scikit-Learn, Tailwind CSS.
 
@@ -61,7 +61,8 @@ I am a software engineer focused on building robust, secure backend systems in *
 
 ### 4. [FloodGuard AI](https://github.com/123angmish/floodguard-ai) — Real-Time Flood Hazard & Risk Monitoring *(Final Year Computer Vision Project)*
 *AI and Computer Vision prototype developed as a Final Year Project in B.Tech ECE (Banasthali Vidyapith) for flood detection, flow velocity estimation, and community risk alerting.*
-- **Computer Vision Pipeline**: Combines deep convolutional neural networks (`MobileNetV2` transfer learning) for frame classification with Lucas-Kanade optical flow for surface motion tracking and velocity estimation.
+- **Computer Vision Pipeline**: Combines deep convolutional neural networks (`MobileNetV2` transfer learning) for frame classification with Lucas-Kanade optical flow for relative surface motion tracking and velocity estimation.
+- **Verified Architecture**: Verified saved MobileNetV2 frozen backbone (2.26M parameters) + custom dense classification head (164K parameters) with reproducible retraining module in `training/`.
 - **Telemetry & WebSockets**: Low-latency video stream pipeline with MJPEG feed and WebSocket channels for location-scoped emergency telemetry.
 - **Stack**: Python 3.10+, FastAPI, OpenCV, MobileNetV2 (TensorFlow), SQLite, WebSockets.
 
