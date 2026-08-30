@@ -64,7 +64,7 @@ I am a software engineer focused on building robust, secure backend systems in *
 - **Computer Vision Pipeline**: Combines deep convolutional neural networks (`MobileNetV2` transfer learning) for frame classification with Lucas-Kanade optical flow for relative surface motion tracking and velocity estimation.
 - **Verified Architecture**: Verified saved MobileNetV2 frozen backbone (2.26M parameters) + custom dense classification head (164K parameters) with reproducible retraining module in `training/`.
 - **Telemetry & WebSockets**: Low-latency video stream pipeline with MJPEG feed and WebSocket channels for location-scoped emergency telemetry.
-- **Stack**: Python 3.10+, FastAPI, OpenCV, MobileNetV2 (TensorFlow), SQLite, WebSockets.
+- **Stack**: Python 3.10+, FastAPI, OpenCV, MobileNetV2-based CNN (TensorFlow), SQLite, WebSockets.
 
 ---
 
