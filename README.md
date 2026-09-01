@@ -4,18 +4,20 @@
 B.Tech in Electronics & Communication Engineering — **Banasthali Vidyapith**  
 *Machine Learning & Computer Vision Research Exposure (NIT Kurukshetra Internship & Final Year Project)*
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Angel_Mishra-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/angel-mishra-992474345/)
-[![GitHub](https://img.shields.io/badge/GitHub-123angmish-181717?style=flat&logo=github)](https://github.com/123angmish)
+[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Website-00C7B7?style=for-the-badge&logo=google-chrome&logoColor=white)](https://123angmish.github.io/angel-mishra-portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Angel_Mishra-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/angel-mishra-992474345/)
+[![GitHub](https://img.shields.io/badge/GitHub-123angmish-181717?style=for-the-badge&logo=github)](https://github.com/123angmish)
 
 ---
 
 ## 👨‍💻 Professional Summary
 
-I am a software engineer focused on building robust, secure backend systems in **Java & Spring Boot** and dynamic full-stack applications with **React.js**. I emphasize writing clean, testable code, enforcing strong authentication & authorization boundaries, designing relational database schemas, and applying efficient Data Structures & Algorithms to solve practical engineering problems.
+I am a software engineer focused on building robust, secure backend systems in **Java & Spring Boot** and dynamic full-stack applications with **React.js / Next.js**. I emphasize writing clean, testable code, enforcing strong authentication & authorization boundaries, designing relational database schemas, and applying efficient Data Structures & Algorithms to solve practical engineering problems.
 
-- 🔭 **Current Focus**: Building secure RESTful APIs, Spring Security authentication architectures, and learning database concurrency & transaction management.
-- 🎯 **Target Roles**: Java Backend Developer, Full-Stack Developer, Software Development Engineer (SDE).
-- 💡 **Core CS**: Data Structures & Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems, Computer Networks.
+- 🌐 **Portfolio Website**: [123angmish.github.io/angel-mishra-portfolio](https://123angmish.github.io/angel-mishra-portfolio/)
+- 🎯 **Current Focus**: Building secure RESTful APIs, Spring Security authentication architectures, and database concurrency & transaction management.
+- 💼 **Target Roles**: Java Backend Developer, Full-Stack Developer, Software Development Engineer (SDE).
+- 🧠 **Core CS**: Data Structures & Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems, Computer Networks.
 
 ---
 
@@ -24,14 +26,21 @@ I am a software engineer focused on building robust, secure backend systems in *
 | Area | Technologies |
 | :--- | :--- |
 | **Backend & APIs** | Java 21, Spring Boot (3.x), Spring Security 6, Spring Data JPA, Hibernate, RESTful APIs, JWT, BCrypt, Jakarta Validation |
-| **Frontend** | React.js, Redux Toolkit, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Vite |
+| **Frontend** | React.js, Next.js, Redux Toolkit, JavaScript (ES6+), TypeScript, HTML5, CSS3, Tailwind CSS, Vite |
 | **Databases & ORM** | PostgreSQL, MySQL, H2 Database, Hibernate ORM, Flyway Database Migrations |
 | **Tools & Environments** | Git, GitHub, Maven, Docker, Postman, Linux / Bash, MVC Architecture |
 | **ML & Computer Vision** | Python 3.10+, FastAPI, OpenCV, MobileNetV2 / TensorFlow, Librosa, Scikit-Learn |
 
 ---
 
-## 🌟 Featured Placement Projects
+## 🌟 Featured Projects
+
+### 🌐 [Interactive Developer Portfolio](https://github.com/123angmish/angel-mishra-portfolio) · [Live Demo](https://123angmish.github.io/angel-mishra-portfolio/)
+*Modern developer portfolio website with interactive project showcases, constellation navigation, and full responsiveness.*
+- **Features**: Responsive design, constellation interactive nodes, research details, downloadable resume, and static production export.
+- **Stack**: Next.js 16, React 19, TypeScript, Tailwind CSS, GitHub Pages.
+
+---
 
 ### 1. [CampusShare](https://github.com/123angmish/campus-share-project-) — Peer-to-Peer Campus Marketplace *(Flagship Project)*
 *Full-stack campus utility sharing platform built with Java 21, Spring Boot 3.5, React 19, and PostgreSQL.*
@@ -61,10 +70,22 @@ I am a software engineer focused on building robust, secure backend systems in *
 
 ### 4. [FloodGuard AI](https://github.com/123angmish/floodguard-ai) — Real-Time Flood Hazard & Risk Monitoring *(Final Year Computer Vision Project)*
 *AI and Computer Vision prototype developed as a Final Year Project in B.Tech ECE (Banasthali Vidyapith) for flood-scene analysis, estimated surface motion/flow analysis, and community risk alerting.*
-- **Computer Vision Pipeline**: Combines a MobileNetV2-based CNN for frame-level flood scene classification with Lucas-Kanade optical flow for relative surface motion tracking and estimated flow analysis.
+- **Computer Vision Pipeline**: Combines a MobileNetV2-based CNN for frame-level flood scene classification with Lucas–Kanade optical flow for relative surface motion tracking and estimated flow analysis.
 - **Verified Architecture**: Saved model contains a MobileNetV2-based frozen backbone (~2.26M non-trainable parameters) with a custom dense binary classification head (~164K trainable parameters), plus a separate reproducible retraining module under `training/`.
 - **Telemetry & WebSockets**: Low-latency video stream pipeline with MJPEG feed and WebSocket channels for location-scoped emergency telemetry.
 - **Stack**: Python 3.10+, FastAPI, OpenCV, MobileNetV2-based CNN (TensorFlow), SQLite, WebSockets.
+
+---
+
+### 5. [Cooknetic AI](https://github.com/123angmish/Cooknetic-AI) — AI Culinary Companion & Smart Kitchen Platform
+*Full-Stack AI culinary platform powered by Spring Boot and Google Gemini multimodal vision for fridge-scanning, recipe generation, and voice workflows.*
+- **Stack**: Java, Spring Boot, Google Gemini API, Web Speech API.
+
+---
+
+### 6. [BreakChain AI](https://github.com/123angmish/breakchain-AI) — Mental Wellbeing & Recovery Platform
+*Empathetic support platform featuring AI-assisted reflection, therapeutic recovery tools, and voice journaling.*
+- **Stack**: Java, Maven, Google Gemini, OpenAI, Web Audio API.
 
 ---
 
@@ -84,7 +105,9 @@ I am a software engineer focused on building robust, secure backend systems in *
 
 ---
 
-## 📫 Let's Connect
+## 📬 Let's Connect
 
-- **LinkedIn**: [linkedin.com/in/angel-mishra-992474345](https://www.linkedin.com/in/angel-mishra-992474345/)
-- **GitHub**: [github.com/123angmish](https://github.com/123angmish)
+- **🌐 Live Portfolio**: [123angmish.github.io/angel-mishra-portfolio](https://123angmish.github.io/angel-mishra-portfolio/)
+- **📧 Email**: [angelmishraofficial@gmail.com](mailto:angelmishraofficial@gmail.com)
+- **💼 LinkedIn**: [linkedin.com/in/angel-mishra-992474345](https://www.linkedin.com/in/angel-mishra-992474345/)
+- **🐙 GitHub**: [github.com/123angmish](https://github.com/123angmish)
